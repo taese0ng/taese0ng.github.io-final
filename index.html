@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToDO List</title>
+        <link rel="stylesheet" href="./src/styles.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        
+        <div id="ToDoList">
+            <span id="js_weather"></span>
+            <video id="video" preload="auto" autoplay="true" loop="loop" muted>
+                <source src="./assets/Gang.mp4" type="video/mp4">
+            </video>
+            <span id="clock">this is clock</span>
+            <h1 id="title">ToDo List</h1>
+            <div id="ToUserName">
+                <form id="userNameInput">
+                    <input class="ToDoInput" type="text" placeholder="input userName">
+                    <button class="ToDoBtn">Enter</button>
+                </form>
+            </div>
+            <div id="goToDo">
+                <form id="ToDoListForm">
+                    <input class="ToDoInput" id="ToDoInput" type="text" placeholder="input ToDo">
+                    <button class="ToDoBtn">Push</button>
+                </form>
+                
+                <div id="listBox">
+                    <div class="List">
+                        <h2>Pending</h2>
+                        <ul id="pendingList">
+
+                        </ul>
+                    </div>
+
+                    <div class="List">
+                        <h2>Finished</h2>
+                        <ul id="finishList">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="src/index.js"></script>
+        <script src="src/weather.js"></script>
+    </body>
+</html>
